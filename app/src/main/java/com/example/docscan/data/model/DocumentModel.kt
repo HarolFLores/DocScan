@@ -6,5 +6,8 @@ data class DocumentModel(
     val filePath: String,
     val dateFormatted: String,
     val sizeInKb: Long,
-    val pageCount: Int
+    val pageCount: Int,
+    val category: String = "Recientes",
+    val isLocked: Boolean = false,
+    val isVerified: Boolean = true
 )
